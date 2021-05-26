@@ -103,7 +103,10 @@ dist
 # TernJS port file
 .tern-port
 
-# IDE config
+# IDE ignore
 .idea
 *.iml
 .vscode
+
+# project ignore
+CookieSet.json
