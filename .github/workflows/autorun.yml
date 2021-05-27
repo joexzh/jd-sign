@@ -1,0 +1,16 @@
+name: run jd-sign
+on:
+  push:
+  schedule:
+    - cron: '0 21 * * *'
+jobs:
+  sign:
+    name: sign-jd
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: action/setup-node@v2
+      - run: npm install
+      - env:
+          mycookie: ${{ secrets.MY_COOKIE }}
+        run: npm start
