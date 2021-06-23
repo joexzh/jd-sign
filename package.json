@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node JD_DailyBonus.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dotenv": "node -r dotenv/config JD_DailyBonus.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "request": "^2.88.2"
   }
 }
