@@ -2,5 +2,5 @@
 .env
 .github
 *.iml
-
+.git
 node_modules
