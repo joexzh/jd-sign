@@ -17,8 +17,11 @@ function send(message) {
     }, function (err, resp, body) {
         if (err) {
             console.error(err)
+        } else {
+            if (body.hasOwnProperty("ok")) {
+                console.log(`sent to telegram bot: ${body.ok}`)
+            }
         }
-        console.log(body)
     })
 }
 
